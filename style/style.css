@@ -1,10 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 
+/* colores del logo 
+5FA199 verde
+C64832 naranja
+F8E12E amarillo
+211915 negro
+FFFFFF blanco */
+
 * {
       font-family: 'Comic Neue', cursive;
-}
+      margin: 0;
+      padding: 0px;
+      box-sizing: border-box;
+    }
 
 
 h1{ 
-    
+font-size: 300%;
+font-style: italic;
+}
+
+nav{
+    text-align: right;
+    display: inline;
+ }
+
+header {
+    height: auto;
+    width: auto;
+}
+
+.banner{
+    width:fit-content;
+    border: 2px solid orangered;
+    border-bottom: 1px solid orangered;
+padding: 0;
+}
+
+h2{
+    text-align: center;
+    border: 2px solid orangered;
+    border-top: 1px solid orangered;
+    display: block;
+    }
+
+
+
+article {
+display: flex;
+align-items:flex-end;
+}
+
+
+h3{
+    text-shadow: #F8E12E 1px 0 10px;
+}
+
+
+#logo{
+display: flex;
+width: 300px;
+align-self: left;
+}
+
+footer{
+    object-fit: none;
+width: unset;
+}
+
+#h1{
+    object-fit: none;
+  width: 100%;
+  height: 900px;
+  padding-bottom: 100px;
 }
