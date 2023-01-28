@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
-
 /* colores del logo 
 5FA199 verde
 C64832 naranja
@@ -14,10 +13,9 @@ BOTONES
 */
 
 * {
-  font-family: 'Jockey One', sans-serif;;
-  font-style: oblique;
+  font-family: 'Jockey One', sans-serif;
   margin: 0;
-  padding: 0px;
+  padding: 0;
   box-sizing: border-box;
   font-size: 20px;
 }
@@ -25,79 +23,72 @@ BOTONES
 h1 {
   font-size: 300%;
   font-style: italic;
-  background-color: #f8e12e;
 }
 
-
-header {
-  height: auto;
-  width: auto;
-}
-
-.banner {
-  width: fit-content;
-  border: 2px solid orangered;
-  border-bottom: 1px solid orangered;
-  padding: 0;
-}
-
-h2 {
+.upcoming {
   text-align: center;
   border: 2px solid orangered;
-  border-top: 1px solid orangered;
-  display: block;
-  width: 1920px;
-}
-
-.article {
-  display: inline;
-  position: absolute;
-  right: 50%;
-  margin-top: 50px;
-}
-
-#logo {
-  display: inline;
-  width: 279px;
-  align-self: left;
+  border-top: 1px solid C64832;
 }
 
 h3 {
   text-shadow: #f8e12e 1px 0 10px;
 }
 
-footer {
-  object-fit: none;
-  width: unset;
-}
-
 #h1 {
   object-fit: none;
   width: 100%;
   height: 900px;
-   font-family: 'Jockey One', sans-serif;;
+  font-family: 'Jockey One', sans-serif;
   box-sizing: border-box;
 }
 
-.button{
-    display: inline-flex;
-    gap: 10px;
-    position: absolute;
-    left: 1660px;
-    top: 55px;
-    }
-
+.button {
+  position: absolute;
+  right: 0;
+  top: 65px;
+}
+.active{
+  background-color: #6EAC45 !important;
+}
 .button a {
-    color: white;
-    padding: 10px;
-    background-color: #416FB5;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-
+  color: white;
+  padding: 10px;
+  background-color: #416fb5;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 7px;
+  border: 1px solid #c64832;
+  text-decoration: none;
+  box-shadow: 10px 10px 0px 0px #5fa199;
 }
 
-.sticky{
+.sticky {
   position: sticky;
   top: 0px;
+  background-color: #f8e12e;
 }
+
+.centro {
+  display: flex;
+}
+
+.logo {
+  display: inline;
+  width: 279px;
+  align-self: left;
+}
+.article {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+body {
+  max-width: 100vw;
+}
+
+.down {
+  width: -webkit-fill-available;
+}
+
+
