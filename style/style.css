@@ -63,7 +63,6 @@ h3 {
 }
 
 .logo {
-  display: inline;
   width: 279px;
   align-self: left;
 }
@@ -82,4 +81,8 @@ body {
 
 .active {
   background-color: #6eac45 !important;
+}
+
+nav a:hover{
+background-color: #C64832;
 }
