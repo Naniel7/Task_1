@@ -21,7 +21,7 @@ BOTONES
 h1 {
   font-size: 300%;
   font-style: italic;
-}
+  }
 
 .upcoming {
   text-align: center;
@@ -56,6 +56,8 @@ h3 {
   top: 0px;
   background-color: #f8e12e;
   border: 1px solid #c64832;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .middle {
@@ -63,7 +65,7 @@ h3 {
 }
 
 .logo {
-  width: 279px;
+  width: 7vw;
   align-self: left;
 }
 .article {
@@ -85,4 +87,15 @@ body {
 
 nav a:hover{
 background-color: #C64832;
+}
+
+table{
+  background-color: #f8e12e;
+  padding: 5px;
+  border: 2px solid #211915;
+}
+
+tr{
+  padding: 3px;
+  border: 3px solid red;
 }
