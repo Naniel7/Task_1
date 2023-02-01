@@ -10,6 +10,7 @@ BOTONES
 6EAC45 verde
 416FB5 celeste*/
 
+
 * {
   font-family: 'Jockey One', sans-serif;
   margin: 0;
@@ -18,9 +19,35 @@ BOTONES
   font-size: 20px;
 }
 
-h1 {
-  font-size: 300%;
-  font-style: italic;
+.logo {
+  width: 8rem;
+  align-self: left;
+  border: 1px solid #C64832;
+  border-radius: 100px ;
+  padding: 6px;
+  background-color: #ffffff;
+  margin: 10px;
+  box-shadow: 0px 0px 0px 5px #5fa199;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  background-color: #f8e12e;
+  border: 1px solid #c64832;
+  display: flex;
+  }
+
+.middle {
+  display: flex;
+  background-image: url(../Image/hockey_1.jpg);
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.article {
+  margin-top: 50px;
+  margin-left: 50px;
   }
 
 .upcoming {
@@ -29,14 +56,12 @@ h1 {
   border-top: 1px solid C64832;
 }
 
-h3 {
-  text-shadow: #f8e12e 1px 0 10px;
-}
-
 .button {
-  position: absolute;
+  display: flex;
+    position: absolute;
+  bottom: 0;
   right: 0;
-  top: 65px;
+  gap: 6px;
 }
 
 .button a {
@@ -51,6 +76,42 @@ h3 {
   box-shadow: 10px 10px 0px 0px #5fa199;
 }
 
+ h1 {
+  font-size: 300%;
+  font-style: italic;
+  padding: 15px;
+  }
+
+  header{
+    height: 13vh;
+    border-bottom: 10px solid #C64832;
+  }
+
+  .active {
+    background-color: #6eac45 !important;
+  }
+
+
+
+
+
+
+/* 
+
+
+
+
+h1 {
+  font-size: 300%;
+  font-style: italic;
+  }
+
+
+h3 {
+  text-shadow: #f8e12e 1px 0 10px;
+}
+
+
 .sticky {
   position: sticky;
   top: 0px;
@@ -60,25 +121,12 @@ h3 {
   flex-wrap: wrap;
 }
 
-.middle {
-  display: flex;
-}
 
-.logo {
-  width: 7vw;
-  align-self: left;
-}
-.article {
-  margin-top: 50px;
-  margin-left: 50px;
-}
+
+
 
 body {
   max-width: 100vw;
-}
-
-.down {
-  width: -webkit-fill-available;
 }
 
 .active {
@@ -86,7 +134,7 @@ body {
 }
 
 nav a:hover{
-background-color: #C64832;
+background-color: ;
 }
 
 table{
@@ -99,3 +147,4 @@ tr{
   padding: 3px;
   border: 3px solid red;
 }
+ */
