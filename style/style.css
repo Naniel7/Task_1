@@ -40,6 +40,7 @@ F8E12E amarillo
 
   .img{
     width: 752px;
+    height: 100%;
     display: flex;
     right: 0;
    }
@@ -92,15 +93,56 @@ display: flex;
 }
 
 footer{
-  background-color: #5fa199;
-  border: 10px solid #C64832;
+    background-color: #5fa199;
+  border: 2px solid #C64832;
+  text-align: right;
+  padding: 10px;
+}
+
+.bot {
+  border-bottom: 2px solid black;
+}
+
+.rig {
+  border-right: 2px solid black;
+}
+
+table{
+  padding: 5px;
+  width: 580px;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #F8E12E;
+}
+
+th{
+border: 2px solid black;
+background:linear-gradient(to left,#F8E12E, orangered );
+}
+
+.degraded{
+  background-image: linear-gradient(orangered, #f8e12e);
+}
+
+.sep{
+background: linear-gradient(170deg,orangered,#f8e12e)100%;
 }
 
 
-tr{
-  padding: 3px;
-  border: 3px solid red;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 
