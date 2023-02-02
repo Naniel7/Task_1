@@ -5,11 +5,7 @@
 C64832 naranja
 F8E12E amarillo
 211915 negro
-
-BOTONES
-6EAC45 verde
-416FB5 celeste*/
-
+*/
 
 * {
   font-family: 'Jockey One', sans-serif;
@@ -17,38 +13,36 @@ BOTONES
   padding: 0;
   box-sizing: border-box;
   font-size: 20px;
-}
+  }
 
 .logo {
-  width: 8rem;
-  align-self: left;
-  border: 1px solid #C64832;
-  border-radius: 100px ;
-  padding: 6px;
-  background-color: #ffffff;
-  margin: 10px;
-  box-shadow: 0px 0px 0px 5px #5fa199;
+  width: 177px;
+  clip-path: inset(17px 35px 77px 35px);
+
 }
 
 .sticky {
   position: sticky;
   top: 0px;
-  background-color: #f8e12e;
-  border: 1px solid #c64832;
+  background-color: #F8E12E;
+  border: 2px solid #c64832;
   display: flex;
   }
 
 .middle {
   display: flex;
-  background-image: url(../Image/hockey_1.jpg);
-  background-position: center;
-  background-attachment: scroll;
-}
+  }
 
 .article {
   margin-top: 50px;
   margin-left: 50px;
   }
+
+  .img{
+    width: 752px;
+    display: flex;
+    right: 0;
+   }
 
 .upcoming {
   text-align: center;
@@ -57,11 +51,11 @@ BOTONES
 }
 
 .button {
-  display: flex;
-    position: absolute;
+display: flex;
+  position: absolute;
   bottom: 0;
   right: 0;
-  gap: 6px;
+  gap: 8px;
 }
 
 .button a {
@@ -90,6 +84,12 @@ BOTONES
   .active {
     background-color: #6eac45 !important;
   }
+
+.banner{
+    object-fit:cover;
+  width: 1900px;
+  height: 490px
+}
 
 
 
