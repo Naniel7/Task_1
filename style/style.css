@@ -192,3 +192,7 @@ input {
   display: flex;
   gap:50px;
 }
+
+.brick{
+  margin-bottom: 15px;
+}

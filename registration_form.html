@@ -2,228 +2,241 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mighty Ducks Hockey League</title>
-    <link rel="shortcut icon" href="./Image/Logo_Mighty_ducks-01.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mighty Ducks Hockey League</title>
+  <link rel="shortcut icon" href="./Image/Logo_Mighty_ducks-01.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-    <header class="sticky">
-        <div><img class="logo" src="./Image/Logo_Mighty_ducks-01.png" alt="Logo"></div>
-        <h1>Mighty Ducks Hockey League</h1>
-        <nav class="button">
-            <a href="index.html">Home</a>
-            <a href="game_info.html">Game Information</a>
-            <a href="rules.html">Rules of play and policies</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="#" class="active">Register</a>
-        </nav>
-    </header>
-    <main>
+  <header class="sticky">
+    <div>
+      <img class="logo" src="./Image/Logo_Mighty_ducks-01.png" alt="Logo">
+    </div>
+    <h1>Mighty Ducks Hockey League</h1>
+    <nav class="button">
+      <a href="index.html">Home</a>
+      <a href="game_info.html">Game Information</a>
+      <a href="rules.html">Rules of play and policies</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="active">Register</a>
+    </nav>
+  </header>
+  <main>
+    <h4>Registration Form</h4>
+    <form action="show_data.html" method="get">
+      <fieldset class="brick">
+        <div class="flex gap15 brick">
+          <div class="input-container">
+            <label for="First_Name">Player's First Name:</label>
+            <input type="text" name="First_Name" id="First_Name">
+          </div>
+          <div class="input-container">
+            <label for="Last_Name">Last Name: </label>
+            <input type="text" name="Last_Name" id="Last_Name">
+          </div>
+        </div>
 
-        <h4>Registration Form</h4>
-        <form action="show_data.html" method="get">
-            <fieldset>
-                <div class="flex gap15">
-                    <div class="input-container">
-                        <label for="First_Name">Player's First Name:</label>
-                        <input type="text" name="First_Name" id="First_Name">
-                    </div>
-                    <div class="input-container">
-                        <label for="Last_Name">Last Name: </label>
-                        <input type="text" name="Last_Name" id="Last_Name">
-                    </div>
-                </div>
-                <br>
-                <div class="input-container">
-                    <label for="Street_Address">Street Address: </label>
-                    <input type="text" name="Street_Address" id="Street_Address">
-                </div>
-                <br>
-                <div class="flex gap15">
-                    <div class="input-container">
-                        <label for="City">City: </label>
-                        <input type="text" name="City" id="City">
-                    </div>
-                    <div class="input-container">
-                        <label for="Zip_Code">Zip Code: </label>
-                        <input type="number" name="Zip_Code" id="Zip_Code">
-                    </div>
-                </div>
-                <br>
-                <div class="flex gap15">
-                    <div class="input-container">
-                        <label for="Birth_Date">Birth Date: </label>
-                        <input type="date" name="Birth_Date" id="Birth_Date">
-                    </div>
-                    <div class="input-container radio">
-                        <label for="Female">Gender: </label>
-                        <input type="radio" name="Gender" value="Female" id="Female">Female
-                        <label for="Male"> </label>
-                        <input type="radio" name="Gender" value="Male" id="Male">Male
+        <div class="input-container brick">
+          <label for="Street_Address">Street Address: </label>
+          <input type="text" name="Street_Address" id="Street_Address">
+        </div>
 
-                    </div>
-                </div>
-                <br>
-                <div class="flex radio">
-                    <label for="Pre-School">Grade: </label>
-                    <input type="radio" name="Grade" value="Pre-School" id="Pre-School">Pre-School
-                    <label for="1st"></label>
-                    <input type="radio" name="Grade" value="1st" id="1st">1st
-                    <label for="2nd"></label>
-                    <input type="radio" name="Grade" value="2nd" id="2nd">2nd
-                    <label for="3rd"> </label>
-                    <input type="radio" name="Grade" value="3rd" id="3rd">3rd
-                    <label for="4th"> </label>
-                    <input type="radio" name="Grade" value="4th" id="4th">4th
-                    <label for="5th"> </label>
-                    <input type="radio" name="Grade" value="5th" id="5th">5th
+        <div class="flex gap15 brick">
+          <div class="input-container">
+            <label for="City">City: </label>
+            <input type="text" name="City" id="City">
+          </div>
+          <div class="input-container">
+            <label for="Zip_Code">Zip Code: </label>
+            <input type="number" name="Zip_Code" id="Zip_Code" max="99524">
+          </div>
+        </div>
 
-                </div>
+        <div class="flex gap15 brick">
+          <div class="input-container">
+            <label for="Birth_Date">Birth Date: </label>
+            <input type="date" name="Birth_Date" id="Birth_Date">
+          </div>
+          <div class="input-container radio">
+            <label for="Female">Gender: </label>
+            <input type="radio" name="Gender" value="Female" id="Female">Female
+            <label for="Male"> </label>
+            <input type="radio" name="Gender" value="Male" id="Male">Male
+          </div>
+        </div>
 
+        <div class="flex radio">
+          <label for="Pre-School">Grade: </label>
+          <input type="radio" name="Grade" value="Pre-School" id="Pre-School">Pre-School
+          <label for="1st"></label>
+          <input type="radio" name="Grade" value="1st" id="1st">1st
+          <label for="2nd"></label>
+          <input type="radio" name="Grade" value="2nd" id="2nd">2nd
+          <label for="3rd"> </label>
+          <input type="radio" name="Grade" value="3rd" id="3rd">3rd
+          <label for="4th"> </label>
+          <input type="radio" name="Grade" value="4th" id="4th">4th
+          <label for="5th"> </label>
+          <input type="radio" name="Grade" value="5th" id="5th">5th
+        </div>
+      </fieldset>
 
-            </fieldset><br>
+      <fieldset class="brick">
+        <legend>Which elementary school do you live near?</legend>
+        <p><strong>Closest School: </strong></p>
+        <div class="school-container">
+          <div>
+            <div class="school">
+              <label for="AJ"></label>
+              <input type="radio" name="Closest_School" value="AJ Katzenmaier" id="AJ">
+              AJ Katzenmaier
+            </div>
+            <div class="school">
+              <label for="Greenbay"> </label>
+              <input type="radio" name="Closest_School" value="Greenbay" id="Greenbay">
+              Greenbay
+            </div>
+            <div class="school">
+              <label for="Howard"> </label>
+              <input type="radio" name="Closest_School" value="Howard A Yeager" id="Howard">
+              Howard A Yeager
+            </div>
+          </div>
+          <div>
+            <div class="school">
+              <label for="Marjorie"> </label>
+              <input type="radio" name="Closest_School" value="Marjorie P Hart" id="Marjorie">
+              Marjorie P Hart
+            </div>
+            <div class="school">
+              <label for="North"> </label>
+              <input type="radio" name="Closest_School" value="North Elementary" id="North">
+              North Elementary
+            </div>
+            <div class="school">
+              <label for="South"> </label>
+              <input type="radio" name="Closest_School" value="South Elementary" id="South">
+              South Elementary
+            </div>
+          </div>
+        </div>
+      </fieldset>
 
-            <fieldset>
-                <legend>Which elementary school do you live near?</legend>
-                <legend>Closest School: </legend>
-                <div class="school-container">
-                    <div>
-                        <div class="school">
-                            <label for="AJ"></label>
-                            <input type="radio" name="Closest_School" value="AJ Katzenmaier" id="AJ"> AJ Katzenmaier
-                        </div>
-                        <div class="school">
-                            <label for="Greenbay"> </label>
-                            <input type="radio" name="Closest_School" value="Greenbay" id="Greenbay"> Greenbay
-                        </div>
-                        <div class="school">
-                            <label for="Howard"> </label>
-                            <input type="radio" name="Closest_School" value="Howard A Yeager" id="Howard"> Howard A
-                            Yeager
-                        </div>
-                    </div>
-                    <div>
-                        <div class="school">
-                            <label for="Marjorie"> </label>
-                            <input type="radio" name="Closest_School" value="Marjorie P Hart" id="Marjorie"> Marjorie P
-                            Hart
-                        </div>
-                        <div class="school">
-                            <label for="North"> </label>
-                            <input type="radio" name="Closest_School" value="North Elementary" id="North"> North
-                            Elementary
-                        </div>
-                        <div class="school">
-                            <label for="South"> </label>
-                            <input type="radio" name="Closest_School" value="South Elementary" id="South"> South
-                            Elementary
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend>What position(s) do you normally play? (check all that apply) </legend>
-                <div class="school-container">
-                    <div>
-                        <div class="school">
-                            <label for="Foward"> </label>
-                            <input type="checkbox" name="Position" value="Foward" id="Foward"> Foward
-                        </div>
-                        <div class="school">
-                            <label for="Defense"> </label>
-                            <input type="checkbox" name="Position" value="Defense" id="Defense"> Defense
-                        </div>
-                    </div>
-                    <div>
-                        <div class="school">
-                            <label for="Midfield"> </label>
-                            <input type="checkbox" name="Position" value="Midfield" id="Midfield"> Midfield
-                        </div>
-                        <div class="school">
-                            <label for="Goalkeeper"> </label>
-                            <input type="checkbox" name="Position" value="Goalkeeper" id="Goalkeeper"> Goalkeeper
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend>Uniform Size:</legend>
-                <div class="school-container">
-                    <div>
-                        <div class="school">
-                            <label for="Youth_S"> </label>
-                            <input type="radio" name="Uniform_Size" value="Youth Small" id="Youth_S">Youth Small
-                        </div>
-                        <div class="school">
-                            <label for="Youth_M"> </label>
-                            <input type="radio" name="Uniform_Size" value="Youth Medium" id="Youth_M">Youth Medium
+      <fieldset class="brick">
+        <legend>
+          What position(s) do you normally play? (check all that apply)
+        </legend>
+        <div class="school-container">
+          <div>
+            <div class="school">
+              <label for="Foward"> </label>
+              <input type="checkbox" name="Position" value="Foward" id="Foward">
+              Foward
+            </div>
+            <div class="school">
+              <label for="Defense"> </label>
+              <input type="checkbox" name="Position" value="Defense" id="Defense">
+              Defense
+            </div>
+          </div>
+          <div>
+            <div class="school">
+              <label for="Midfield"> </label>
+              <input type="checkbox" name="Position" value="Midfield" id="Midfield">
+              Midfield
+            </div>
+            <div class="school">
+              <label for="Goalkeeper"> </label>
+              <input type="checkbox" name="Position" value="Goalkeeper" id="Goalkeeper">
+              Goalkeeper
+            </div>
+          </div>
+        </div>
+      </fieldset>
 
-                        </div>
-                        <div class="school">
-                            <label for="Youth_L"> </label>
-                            <input type="radio" name="Uniform_Size" value="Youth Large" id="Youth_L">Youth Large
+      <fieldset class="brick">
+        <legend>Uniform Size:</legend>
+        <div class="school-container">
+          <div>
+            <div class="school">
+              <label for="Youth_S"> </label>
+              <input type="radio" name="Uniform_Size" value="Youth Small" id="Youth_S">Youth Small
+            </div>
+            <div class="school">
+              <label for="Youth_M"> </label>
+              <input type="radio" name="Uniform_Size" value="Youth Medium" id="Youth_M">Youth Medium
+            </div>
+            <div class="school">
+              <label for="Youth_L"> </label>
+              <input type="radio" name="Uniform_Size" value="Youth Large" id="Youth_L">Youth Large
+            </div>
+            <div class="school">
+              <label for="Small"> </label>
+              <input type="radio" name="Uniform_Size" value="Small" id="Small">Small
+            </div>
+          </div>
+          <div>
+            <div class="school">
+              <label for="Medium"> </label>
+              <input type="radio" name="Uniform_Size" value="Medium" id="Medium">Medium
+            </div>
+            <div class="school">
+              <label for="Large"> </label>
+              <input type="radio" name="Uniform_Size" value="Large" id="Large">Large
+            </div>
+            <div class="school">
+              <label for="Extra"> </label>
+              <input type="radio" name="Uniform_Size" value="Extra-Large" id="Extra">Extra-Large
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <h3>Permission to Play</h3>
+        <p>
+          I, the parent or guardian of the minor registrant, agree that the
+          registrant and I will abide by all the rules of the Mighty Ducks
+          Hockey League (MDHL). In recognizing the possibility of physical
+          injury associated with hockey and in consideration for the “League”
+          accepting the registrant for its hockey programs and activities, I
+          hereby release, discharge, and/or otherwise indemnify MDHL, their
+          employees and associated personnel and volunteers,including the
+          facilities used for practices and games, against any claim by or on
+          behalf of the registrant as a result of the registrant's
+          participation in the programand/orbeing transported to or from MDHL
+          sponsored activities,which transportation. By signing below, I
+          herebyagree andauthorizethe above.In addition, by signing below,
+          lalso acknowledge that I have read the cancellation policy and agree
+          to its terms.
+        </p>
+        <div class="input-container">
+          <label for="Parent_name">Parent/Guardian Signature</label>
+          <input type="text" name="Parent_name" id="Parent_name">
+        </div>
+        <div class="input-container brick">
+          <label for="Signature_date">Signature Date</label>
+          <input type="date" name="Signature_date" id="Signature_date">
+        </div>
+        <label for="submit">
+          <input type="submit" id="submit" value="Click here to Send" >
+        </label>
+      </fieldset>
+    </form>
+  </main>
 
-                        </div>
-                        <div class="school">
-                            <label for="Small"> </label>
-                            <input type="radio" name="Uniform_Size" value="Small" id="Small">Small
-                        </div>
-                    </div>
-                    <div>
-                        <div class="school">
-                            <label for="Medium"> </label>
-                            <input type="radio" name="Uniform_Size" value="Medium" id="Medium">Medium
-                        </div>
-                        <div class="school">
-                            <label for="Large"> </label>
-                            <input type="radio" name="Uniform_Size" value="Large" id="Large">Large
-                        </div>
-                        <div class="school">
-                            <label for="Extra"> </label>
-                            <input type="radio" name="Uniform_Size" value="Extra-Large" id="Extra">Extra-Large
-                        </div>
-                    </div>
-                </div>
-
-            </fieldset>
-            <fieldset>
-                <h3>Permission to Play</h3>
-                <p> I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all
-                    the
-                    rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury
-                    associated with hockey and in consideration for the “League” accepting the registrant for its
-                    hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL,
-                    their employees and associated personnel and volunteers,including the facilities used for
-                    practices and games, against any claim by or on behalf of the registrant as a result of the
-                    registrant's participation in the programand/orbeing transported to or from MDHL sponsored
-                    activities,which transportation.
-                    By signing below, I herebyagree andauthorizethe above.In addition, by signing below, lalso
-                    acknowledge that I have read the cancellation policy and agree to its terms.</p>
-                <br>
-                <div class="input-container"><label for="">Parent/Guardian Signature</label>
-                    <input type="text" name="Parent_name" id="">
-                </div>
-                <br>
-                <label for="submit">
-                    <input type="submit" id="submit" value="Send">
-                </label>
-            </fieldset>
-        </form>
-    </main>
-
-    <footer>
-        <h3>Please direct all questions to:</h3>
-        <p> Michael Randall, League Coordinator</p>
-        <p> Phone: <a href="tel:(630-690-8132)"> (630) 690-8132</a></p>
-        <p>Email: <a href="mailto:(michael.randall@chihockey.org)">michael.randall@chihockey.org</a> </p>
-    </footer>
+  <footer>
+    <h3>Please direct all questions to:</h3>
+    <p>Michael Randall, League Coordinator</p>
+    <p>Phone: <a href="tel:(630-690-8132)"> (630) 690-8132</a></p>
+    <p>
+      Email:
+      <a href="mailto:(michael.randall@chihockey.org)">michael.randall@chihockey.org</a>
+    </p>
+  </footer>
 </body>
 
 </html>
